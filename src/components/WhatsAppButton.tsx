@@ -1,5 +1,5 @@
 
-import { MessageCirc,, Phone } from "lucide-react";
+import { MessageCircle, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const WhatsAppButton = () => {
