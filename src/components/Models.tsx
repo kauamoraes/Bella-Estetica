@@ -14,7 +14,8 @@ const Models = () => {
       price: "R$100",
       features: ["📄 Página curta + 1 foto do casal"],
       link: "https://convitarte.com.br/cristinaehugo",
-      buttonText: "QUERO O MODELO CURTO"
+      buttonText: "QUERO O MODELO CURTO",
+      image: null
     },
     {
       number: "02", 
@@ -22,7 +23,8 @@ const Models = () => {
       price: "R$150",
       features: ["📄 Página estendida + 3 fotos do casal"],
       link: "https://convitarte.com.br/robertaediego",
-      buttonText: "QUERO O MODELO ESTENDIDO"
+      buttonText: "QUERO O MODELO ESTENDIDO",
+      image: "/lovable-uploads/56caab5f-c9db-44e6-b2cf-339a1c71ba4c.png"
     },
     {
       number: "03",
@@ -30,7 +32,8 @@ const Models = () => {
       price: "R$190",
       features: ["🎥 Clipe com até 10 fotos do casal"],
       link: "https://convitarte.com.br/kauaneedavi",
-      buttonText: "QUERO O MODELO PREMIUM"
+      buttonText: "QUERO O MODELO PREMIUM",
+      image: null
     },
     {
       number: "04",
@@ -38,7 +41,8 @@ const Models = () => {
       price: "R$220", 
       features: ["🎥 Design 3D + até 5 fotos do casal"],
       link: "https://convitarte.com.br/nicoleebruno",
-      buttonText: "QUERO O MODELO GOLD"
+      buttonText: "QUERO O MODELO GOLD",
+      image: null
     }
   ];
 
@@ -58,6 +62,15 @@ const Models = () => {
           {models.map((model, index) => (
             <Card key={index} className="hover:shadow-xl transition-all duration-300 transform hover:scale-105 border-pink-100">
               <CardContent className="p-6 text-center">
+                {model.image && (
+                  <div className="mb-4">
+                    <img 
+                      src={model.image} 
+                      alt={model.title}
+                      className="w-full h-48 object-contain rounded-lg"
+                    />
+                  </div>
+                )}
                 <div className="text-3xl font-bold text-pink-600 mb-2">{model.number}</div>
                 <h3 className="text-xl font-bold text-gray-800 mb-2">{model.title}</h3>
                 <div className="text-2xl font-bold text-rose-600 mb-4">{model.price}</div>
