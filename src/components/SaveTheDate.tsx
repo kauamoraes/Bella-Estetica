@@ -1,0 +1,74 @@
+
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+
+const SaveTheDate = () => {
+  const handleSaveTheDateClick = (type: string) => {
+    const phoneNumber = "5511999999999";
+    const message = `Olá! Gostaria de encomendar o Save The Date ${type}! 💌`;
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
+  };
+
+  const saveTheDateOptions = [
+    {
+      title: "Aquarela",
+      price: "R$100",
+      description: "Vídeo + Aquarela do local + 1 Foto do casal em Aquarela ou Normal",
+      buttonText: "QUERO SAVE THE DATE AQUARELA"
+    },
+    {
+      title: "Line Art",
+      price: "R$100", 
+      description: "Vídeo + Line Art do local",
+      buttonText: "QUERO SAVE THE DATE LINE ART"
+    },
+    {
+      title: "Estendido",
+      price: "R$150",
+      description: "Site com linha do tempo do casal + Aquarela do local + até 4 fotos do casal",
+      buttonText: "QUERO SAVE THE DATE ESTENDIDO"
+    }
+  ];
+
+  return (
+    <section className="py-20 px-4 bg-white">
+      <div className="container mx-auto">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl font-bold text-gray-800 mb-6">
+            Conheça Nossos Modelos de Save The Date
+          </h2>
+          <p className="text-xl text-gray-600">
+            Antecipe a emoção com um Save The Date que combina com o estilo do seu casamento.
+          </p>
+        </div>
+        
+        <div className="grid md:grid-cols-3 gap-8">
+          {saveTheDateOptions.map((option, index) => (
+            <Card key={index} className="hover:shadow-xl transition-all duration-300 transform hover:scale-105 border-pink-100">
+              <CardContent className="p-6 text-center">
+                <h3 className="text-2xl font-bold text-gray-800 mb-2">{option.title}</h3>
+                <div className="text-2xl font-bold text-rose-600 mb-4">{option.price}</div>
+                <p className="text-gray-600 mb-4">{option.description}</p>
+                <div className="mb-6">
+                  <p className="text-sm text-gray-500 mb-2">🎬 [Inserir vídeo demonstrativo]</p>
+                  <a href="#" className="text-pink-600 text-sm hover:underline">
+                    🔗 Ver modelo
+                  </a>
+                </div>
+                <Button
+                  onClick={() => handleSaveTheDateClick(option.title)}
+                  className="w-full bg-gradient-to-r from-pink-500 to-rose-500 hover:from-pink-600 hover:to-rose-600 text-white rounded-full"
+                >
+                  {option.buttonText}
+                </Button>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default SaveTheDate;

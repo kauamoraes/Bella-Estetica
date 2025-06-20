@@ -1,29 +1,38 @@
 
+import { MessageCircle, MapPin, Phone, Link, Music } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
-import { Eye, Sparkles, Heart } from "lucide-react";
 
 const Services = () => {
-  const services = [
+  const features = [
     {
-      icon: Eye,
-      title: "Design de Sobrancelhas",
-      description: "Modelagem perfeita com técnicas de micropigmentação e design personalizado para seu rosto.",
-      price: "A partir de R$ 80",
-      image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+      icon: "💌",
+      title: "Envelope com lacre",
+      description: "Design realista que simula o papel, com opções de acabamento como lacre em cera e laço"
     },
     {
-      icon: Sparkles,
-      title: "Extensão de Cílios",
-      description: "Cílios volumosos e naturais com técnicas 2D, 3D e volume russo para um olhar marcante.",
-      price: "A partir de R$ 120",
-      image: "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+      icon: "📸",
+      title: "Fotos do casal",
+      description: "Tenha fotos de vocês integradas ao design do convite"
     },
     {
-      icon: Heart,
-      title: "Limpeza de Pele",
-      description: "Tratamento facial completo com extração, hidratação e revitalização da pele.",
-      price: "A partir de R$ 100",
-      image: "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+      icon: "📍",
+      title: "Localização clicável",
+      description: "Facilidade para os convidados acessarem o local da cerimônia e recepção com apenas um clique."
+    },
+    {
+      icon: "📱",
+      title: "Confirmação de presença",
+      description: "Sistema integrado para RSVP direto pelo WhatsApp ou formulário personalizado."
+    },
+    {
+      icon: "💻",
+      title: "Link para presentes / site dos noivos",
+      description: "Incluímos o link do seu site de casamento e lista de presentes em qualquer plataforma."
+    },
+    {
+      icon: "🎵",
+      title: "Trilha sonora",
+      description: "Escolha uma música especial para tornar seu convite ainda mais emocionante."
     }
   ];
 
@@ -31,39 +40,25 @@ const Services = () => {
     <section className="py-20 px-4 bg-white">
       <div className="container mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold mb-6">
-            Nossos <span className="bg-gradient-to-r from-pink-600 to-rose-600 bg-clip-text text-transparent">Serviços</span>
+          <h2 className="text-4xl font-bold text-gray-800 mb-6">
+            Todos os modelos incluem:
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Oferecemos tratamentos especializados para realçar sua beleza natural com técnicas modernas e produtos de qualidade
-          </p>
+          <div className="mb-8">
+            <img 
+              src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=500&h=300&fit=crop&crop=center"
+              alt="Exemplo de convite"
+              className="mx-auto rounded-2xl shadow-lg max-w-sm w-full"
+            />
+          </div>
         </div>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {services.map((service, index) => (
-            <Card key={index} className="group hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border-0 shadow-lg overflow-hidden">
-              <div className="relative h-48 overflow-hidden">
-                <img 
-                  src={service.image} 
-                  alt={service.title}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-                <div className="absolute top-4 left-4 w-12 h-12 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center">
-                  <service.icon className="w-6 h-6 text-pink-600" />
-                </div>
-              </div>
-              <CardContent className="p-6">
-                <h3 className="text-2xl font-bold mb-3 text-gray-800">{service.title}</h3>
-                <p className="text-gray-600 mb-4 leading-relaxed">{service.description}</p>
-                <div className="flex justify-between items-center">
-                  <span className="text-2xl font-bold bg-gradient-to-r from-pink-600 to-rose-600 bg-clip-text text-transparent">
-                    {service.price}
-                  </span>
-                  <button className="text-pink-600 hover:text-pink-700 font-semibold hover:underline transition-colors">
-                    Saiba mais →
-                  </button>
-                </div>
+          {features.map((feature, index) => (
+            <Card key={index} className="hover:shadow-lg transition-shadow duration-300 border-pink-100">
+              <CardContent className="p-6 text-center">
+                <div className="text-4xl mb-4">{feature.icon}</div>
+                <h3 className="text-xl font-bold text-gray-800 mb-3">{feature.title}</h3>
+                <p className="text-gray-600 leading-relaxed">{feature.description}</p>
               </CardContent>
             </Card>
           ))}
