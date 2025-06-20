@@ -15,7 +15,7 @@ const Models = () => {
       features: ["📄 Página curta + 1 foto do casal"],
       link: "https://convitarte.com.br/cristinaehugo",
       buttonText: "QUERO O MODELO CURTO",
-      image: null
+      image: "/lovable-uploads/8120fd57-7cbd-4996-97fa-492a6140ff8b.png"
     },
     {
       number: "02", 
@@ -33,7 +33,7 @@ const Models = () => {
       features: ["🎥 Clipe com até 10 fotos do casal"],
       link: "https://convitarte.com.br/kauaneedavi",
       buttonText: "QUERO O MODELO PREMIUM",
-      image: null
+      image: "/lovable-uploads/784e53e9-c94c-44c7-9576-36ff86bca4f4.png"
     },
     {
       number: "04",
@@ -42,7 +42,7 @@ const Models = () => {
       features: ["🎥 Design 3D + até 5 fotos do casal"],
       link: "https://convitarte.com.br/nicoleebruno",
       buttonText: "QUERO O MODELO GOLD",
-      image: null
+      image: "/lovable-uploads/a72d39d5-5b43-47de-95e3-68789a8b9f9a.png"
     }
   ];
 
@@ -66,7 +66,7 @@ const Models = () => {
                   <img 
                     src={model.image} 
                     alt={model.title}
-                    className="w-full h-48 object-contain rounded-lg"
+                    className="w-full h-64 object-contain rounded-lg"
                   />
                 </div>
               )}
