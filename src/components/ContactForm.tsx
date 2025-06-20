@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -8,13 +7,25 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { MessageCircle, Phone, MapPin } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
+interface FormData {
+  name: string;
+  phone: string;
+  service: string;
+}
+
+interface FormErrors {
+  name?: string;
+  phone?: string;
+  service?: string;
+}
+
 const ContactForm = () => {
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState<FormData>({
     name: "",
     phone: "",
     service: ""
   });
-  const [errors, setErrors] = useState({});
+  const [errors, setErrors] = useState<FormErrors>({});
   const { toast } = useToast();
 
   const services = [
@@ -27,7 +38,7 @@ const ContactForm = () => {
   ];
 
   const validateForm = () => {
-    const newErrors = {};
+    const newErrors: FormErrors = {};
     
     if (!formData.name || formData.name.length < 2) {
       newErrors.name = "Nome deve ter pelo menos 2 caracteres";
@@ -45,7 +56,7 @@ const ContactForm = () => {
     return Object.keys(newErrors).length === 0;
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     
     if (!validateForm()) {
@@ -77,7 +88,7 @@ Aguardo retorno para agendarmos! 💄✨`;
     });
   };
 
-  const handleInputChange = (field, value) => {
+  const handleInputChange = (field: keyof FormData, value: string) => {
     setFormData(prev => ({ ...prev, [field]: value }));
     if (errors[field]) {
       setErrors(prev => ({ ...prev, [field]: undefined }));
