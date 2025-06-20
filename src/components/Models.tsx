@@ -81,9 +81,8 @@ const Models = () => {
                     ))}
                   </div>
                   <div className="mb-4">
-                    <p className="text-sm text-gray-500">🎬 [Inserir vídeo demonstrativo]</p>
                     <a href={model.link} target="_blank" rel="noopener noreferrer" className="text-pink-600 text-sm hover:underline">
-                      🔗 Ver exemplo
+                      🔗 Click aqui e conheça o modelo
                     </a>
                   </div>
                   <Button
