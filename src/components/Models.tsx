@@ -15,7 +15,7 @@ const Models = () => {
       features: ["📄 Página curta + 1 foto do casal"],
       link: "https://convitarte.com.br/cristinaehugo",
       buttonText: "QUERO O MODELO CURTO",
-      image: "/lovable-uploads/8120fd57-7cbd-4996-97fa-492a6140ff8b.png"
+      image: "/uploads/8120fd57-7cbd-4996-97fa-492a6140ff8b.png"
     },
     {
       number: "02", 
@@ -24,7 +24,7 @@ const Models = () => {
       features: ["📄 Página estendida + 3 fotos do casal"],
       link: "https://convitarte.com.br/robertaediego",
       buttonText: "QUERO O MODELO ESTENDIDO",
-      image: "/lovable-uploads/56caab5f-c9db-44e6-b2cf-339a1c71ba4c.png"
+      image: "/uploads/56caab5f-c9db-44e6-b2cf-339a1c71ba4c.png"
     },
     {
       number: "03",
@@ -33,7 +33,7 @@ const Models = () => {
       features: ["🎥 Clipe com até 10 fotos do casal"],
       link: "https://convitarte.com.br/kauaneedavi",
       buttonText: "QUERO O MODELO PREMIUM",
-      image: "/lovable-uploads/784e53e9-c94c-44c7-9576-36ff86bca4f4.png"
+      image: "/uploads/784e53e9-c94c-44c7-9576-36ff86bca4f4.png"
     },
     {
       number: "04",
@@ -42,7 +42,7 @@ const Models = () => {
       features: ["🎥 Design 3D + até 5 fotos do casal"],
       link: "https://convitarte.com.br/nicoleebruno",
       buttonText: "QUERO O MODELO GOLD",
-      image: "/lovable-uploads/a72d39d5-5b43-47de-95e3-68789a8b9f9a.png"
+      image: "/uploads/a72d39d5-5b43-47de-95e3-68789a8b9f9a.png"
     }
   ];
 
@@ -58,7 +58,7 @@ const Models = () => {
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 ">
           {models.map((model, index) => (
             <div key={index} className="relative">
               {model.image && (
@@ -66,7 +66,7 @@ const Models = () => {
                   <img 
                     src={model.image} 
                     alt={model.title}
-                    className="w-full h-64 object-contain rounded-lg"
+                    className="block w-full h-[25rem] object-cover rounded-lg"
                   />
                 </div>
               )}

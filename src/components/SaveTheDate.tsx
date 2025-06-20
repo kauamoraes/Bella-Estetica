@@ -51,9 +51,8 @@ const SaveTheDate = () => {
                 <div className="text-2xl font-bold text-rose-600 mb-4">{option.price}</div>
                 <p className="text-gray-600 mb-4">{option.description}</p>
                 <div className="mb-6">
-                  <p className="text-sm text-gray-500 mb-2">🎬 [Inserir vídeo demonstrativo]</p>
                   <a href="#" className="text-pink-600 text-sm hover:underline">
-                    🔗 Ver modelo
+                    🔗Click aqui para ver o modelo
                   </a>
                 </div>
                 <Button
