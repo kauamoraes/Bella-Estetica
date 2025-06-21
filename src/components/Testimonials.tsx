@@ -7,7 +7,7 @@ const Testimonials = () => {
       name: "Vitória e Marco",
       text: "Ficou perfeito, muito obrigada 😊, ameiii. Teu trabalho é incrível, sério.",
       rating: 5,
-      image: "/public/lovable-uploads/PRÉ-188-Vitoria Tavares.jpg"
+      image: "/uploads/PRÉ-188 - Vitoria Tavares.jpg"
     },
     {
       name: "Ana Costa",
