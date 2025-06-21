@@ -16,21 +16,21 @@ const SaveTheDate = () => {
       price: "R$100",
       description: "Vídeo + Aquarela do local + 1 Foto do casal em Aquarela ou Normal",
       buttonText: "QUERO SAVE THE DATE AQUARELA",
-      image: "/lovable-uploads/c753bdd8-b0fd-4af4-926c-c15bacd14c32.png"
+      image: "/uploads/c753bdd8-b0fd-4af4-926c-c15bacd14c32.png"
     },
     {
       title: "Line Art",
       price: "R$100", 
       description: "Vídeo + Line Art do local",
       buttonText: "QUERO SAVE THE DATE LINE ART",
-      image: "/lovable-uploads/5961ca26-c483-45d7-8b7d-dea009fd3884.png"
+      image: "/uploads/5961ca26-c483-45d7-8b7d-dea009fd3884.png"
     },
     {
       title: "Estendido",
       price: "R$150",
       description: "Site com linha do tempo do casal + Aquarela do local + até 4 fotos do casal",
       buttonText: "QUERO SAVE THE DATE ESTENDIDO",
-      image: "/lovable-uploads/d9f5b63c-1c72-4bd4-b2dc-0e0f73b9e5c7.png"
+      image: "/uploads/d9f5b63c-1c72-4bd4-b2dc-0e0f73b9e5c7.png"
     }
   ];
 
@@ -54,7 +54,7 @@ const SaveTheDate = () => {
                   <img 
                     src={option.image} 
                     alt={option.title}
-                    className="block w-full h-[20rem] object-contain rounded-lg bg-gray-50"
+                    className="block w-full h-[20rem] object-contain rounded-lg "
                   />
                 </div>
               )}

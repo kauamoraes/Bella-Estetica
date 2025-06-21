@@ -5,18 +5,17 @@ import { Star, Quote } from "lucide-react";
 const Testimonials = () => {
   const testimonials = [
     {
-      name: "Maria Silva",
-      service: "Design de Sobrancelhas",
-      text: "Simplesmente perfeito! Minha sobrancelha ficou exatamente como eu queria. A Bella tem um olhar único para design e sabe realçar o que cada rosto tem de melhor.",
+      name: "Vitória e Marco",
+      text: "Ficou perfeito, muito obrigada 😊, ameiii. Teu trabalho é incrível, sério.",
       rating: 5,
-      image: "https://images.unsplash.com/photo-1494790108755-2616b612b47c?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80"
+      image: ""
     },
     {
       name: "Ana Costa",
       service: "Extensão de Cílios",
       text: "Estou apaixonada pelo resultado! Os cílios ficaram super naturais e volumosos. Acordo todos os dias me sentindo mais bonita e confiante.",
       rating: 5,
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80"
+      image: "/public/lovable-uploads/PRÉ-188-Vitoria Tavares.jpg"
     },
     {
       name: "Juliana Santos",
