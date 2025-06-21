@@ -54,7 +54,7 @@ const SaveTheDate = () => {
                   <img 
                     src={option.image} 
                     alt={option.title}
-                    className="block w-full h-[20rem] object-cover rounded-lg"
+                    className="block w-full h-[20rem] object-contain rounded-lg bg-gray-50"
                   />
                 </div>
               )}
