@@ -1,4 +1,3 @@
-
 import { Card, CardContent } from "@/components/ui/card";
 import { Star, Quote } from "lucide-react";
 
@@ -8,14 +7,14 @@ const Testimonials = () => {
       name: "Vitória e Marco",
       text: "Ficou perfeito, muito obrigada 😊, ameiii. Teu trabalho é incrível, sério.",
       rating: 5,
-      image: ""
+      image: "/public/lovable-uploads/PRÉ-188-Vitoria Tavares.jpg"
     },
     {
       name: "Ana Costa",
       service: "Extensão de Cílios",
       text: "Estou apaixonada pelo resultado! Os cílios ficaram super naturais e volumosos. Acordo todos os dias me sentindo mais bonita e confiante.",
       rating: 5,
-      image: "/public/lovable-uploads/PRÉ-188-Vitoria Tavares.jpg"
+      image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80"
     },
     {
       name: "Juliana Santos",
