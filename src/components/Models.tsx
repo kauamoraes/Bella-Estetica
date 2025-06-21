@@ -15,7 +15,7 @@ const Models = () => {
       features: ["📄 Página curta + 1 foto do casal"],
       link: "https://convitarte.com.br/cristinaehugo",
       buttonText: "QUERO O MODELO CURTO",
-      image: "/uploads/8120fd57-7cbd-4996-97fa-492a6140ff8b.png"
+      image: "/uploads/interativoCurto.png"
     },
     {
       number: "02", 
@@ -24,7 +24,7 @@ const Models = () => {
       features: ["📄 Página estendida + 3 fotos do casal"],
       link: "https://convitarte.com.br/robertaediego",
       buttonText: "QUERO O MODELO ESTENDIDO",
-      image: "/uploads/56caab5f-c9db-44e6-b2cf-339a1c71ba4c.png"
+      image: "/uploads/novaEstendido.png"
     },
     {
       number: "03",
@@ -33,7 +33,7 @@ const Models = () => {
       features: ["🎥 Clipe com até 10 fotos do casal"],
       link: "https://convitarte.com.br/kauaneedavi",
       buttonText: "QUERO O MODELO PREMIUM",
-      image: "/uploads/784e53e9-c94c-44c7-9576-36ff86bca4f4.png"
+      image: "/uploads/novaPremium.png"
     },
     {
       number: "04",
@@ -42,7 +42,7 @@ const Models = () => {
       features: ["🎥 Design 3D + até 5 fotos do casal"],
       link: "https://convitarte.com.br/nicoleebruno",
       buttonText: "QUERO O MODELO GOLD",
-      image: "/uploads/a72d39d5-5b43-47de-95e3-68789a8b9f9a.png"
+      image: "/uploads/goldNova2.png"
     }
   ];
 
@@ -66,7 +66,7 @@ const Models = () => {
                   <img 
                     src={model.image} 
                     alt={model.title}
-                    className="block w-full h-[25rem] object-cover rounded-lg"
+                    className="block w-full h-[20rem] object-contain rounded-lg"
                   />
                 </div>
               )}
@@ -74,7 +74,7 @@ const Models = () => {
                 <CardContent className="p-6 text-center">
                   <div className="text-3xl font-bold text-pink-600 mb-2">{model.number}</div>
                   <h3 className="text-xl font-bold text-gray-800 mb-2">{model.title}</h3>
-                  <div className="text-2xl font-bold text-rose-600 mb-4">{model.price}</div>
+                  <div className="text-2xl font-bold text-pink-600 mb-4">{model.price}</div>
                   <div className="mb-4">
                     {model.features.map((feature, idx) => (
                       <p key={idx} className="text-gray-600 mb-1">{feature}</p>
@@ -82,7 +82,7 @@ const Models = () => {
                   </div>
                   <div className="mb-4">
                     <a href={model.link} target="_blank" rel="noopener noreferrer" className="text-pink-600 text-sm hover:underline">
-                      🔗 Click aqui e conheça o modelo
+                      🔗 Clique aqui e conheça o modelo
                     </a>
                   </div>
                   <Button

@@ -1,5 +1,6 @@
+
 import { Card, CardContent } from "@/components/ui/card";
-import { Star, Quote } from "lucide-react";
+import { Star } from "lucide-react";
 
 const Testimonials = () => {
   const testimonials = [
@@ -10,18 +11,28 @@ const Testimonials = () => {
       image: "/uploads/PRÉ-188 - Vitoria Tavares.jpg"
     },
     {
-      name: "Ana Costa",
-      service: "Extensão de Cílios",
-      text: "Estou apaixonada pelo resultado! Os cílios ficaram super naturais e volumosos. Acordo todos os dias me sentindo mais bonita e confiante.",
+      name: "Thayrine e Samuel",
+      text: "Nossa, ficou perfeito. Muito obrigada estou apaixonada 😍❤️",
       rating: 5,
-      image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80"
+      image: "/uploads/Thayrine Lima.jpeg"
     },
     {
-      name: "Juliana Santos",
-      service: "Limpeza de Pele",
-      text: "Profissional incrível! Minha pele nunca esteve tão limpa e hidratada. O ambiente é super aconchegante e o atendimento é impecável.",
+      name: "Kethelyn e Henrique",
+      text: "Aaaaaaah eu ameeeeeei!!!!! ❤️❤️❤️ Ficou lindo! Do jeitinho que eu queria. Muito obrigada❤️",
       rating: 5,
-      image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80"
+      image: "/uploads/Kethelyn Passon.jpeg"
+    },
+    {
+      name: "Milena e Matheus",
+      text: "EU AMEI, TUDO, maravilhoso 💖💖💖💖💖💖 Perfeito",
+      rating: 5,
+      image: "/uploads/Milena.jpeg"
+    },
+    {
+      name: "Alessandra e Eudo",
+      text: "Aprovadissimooooo. Gratidão! Muito obrigada, ficou lindooo 🥰🥰🥰 Amamos muito 😍😍😍😍",
+      rating: 5,
+      image: "/uploads/Alessandra.jpg"
     }
   ];
 
@@ -49,7 +60,6 @@ const Testimonials = () => {
                   />
                   <div>
                     <h4 className="font-bold text-gray-800 text-lg">{testimonial.name}</h4>
-                    <p className="text-pink-600 font-medium">{testimonial.service}</p>
                   </div>
                 </div>
                 
@@ -60,7 +70,6 @@ const Testimonials = () => {
                 </div>
                 
                 <div className="relative">
-                  <Quote className="absolute -top-2 -left-2 w-8 h-8 text-pink-200" />
                   <p className="text-gray-600 leading-relaxed italic pl-6">
                     "{testimonial.text}"
                   </p>

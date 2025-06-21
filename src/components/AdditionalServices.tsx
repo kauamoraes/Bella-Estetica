@@ -37,7 +37,7 @@ const AdditionalServices = () => {
             <Card key={index} className="hover:shadow-lg transition-shadow duration-300 border-pink-100">
               <CardContent className="p-6">
                 <h3 className="text-xl font-bold text-gray-800 mb-2">{service.title}</h3>
-                <div className="text-2xl font-bold text-rose-600 mb-4">{service.price}</div>
+                <div className="text-2xl font-bold text-pink-600 mb-4">{service.price}</div>
                 <p className="text-gray-600 mb-4">{service.description}</p>
                 {service.note && (
                   <p className="text-sm text-pink-600 italic">{service.note}</p>
@@ -53,7 +53,7 @@ const AdditionalServices = () => {
         <Card className="bg-gradient-to-r from-pink-100 to-rose-100 border-pink-200">
           <CardContent className="p-8 text-center">
             <h3 className="text-2xl font-bold text-gray-800 mb-4">
-              *Combo Convite dos Padrinhos + Manual dos Padrinhos - R$150,00*
+              Combo Convite dos Padrinhos + Manual dos Padrinhos - R$150,00
             </h3>
             <p className="text-gray-600 mb-4">
               Save The Date + Aquarela do local + Aquarela Croqui da Paleta de Cores + Informações para os Padrinhos

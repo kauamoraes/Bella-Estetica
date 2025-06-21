@@ -7,7 +7,7 @@ const HowToOrder = () => {
       number: "1",
       title: "Escolha o modelo de convite",
       description: "Navegue pelos nossos modelos e selecione o que mais combina com o estilo do casal. Clique no botão e você será direcionada para o WhatsApp.",
-      icon: "🎨"
+      icon: "📱"
     },
     {
       number: "2", 

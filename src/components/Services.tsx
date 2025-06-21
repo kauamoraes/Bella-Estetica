@@ -25,8 +25,8 @@ const Services = () => {
       description: "Sistema integrado para RSVP direto pelo WhatsApp ou formulário personalizado."
     },
     {
-      icon: "💻",
-      title: "Link para presentes / site dos noivos",
+      icon: "🎁",
+      title: "Lista de presentes / site dos noivos",
       description: "Incluímos o link do seu site de casamento e lista de presentes em qualquer plataforma."
     },
     {

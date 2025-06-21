@@ -1,5 +1,7 @@
 
 import { Instagram } from "lucide-react";
+import { faTiktok } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Footer = () => {
   return (
@@ -24,12 +26,13 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4 text-pink-400">Redes Sociais</h4>
             <div className="flex justify-center space-x-6">
-              <a href="https://instagram.com/convitarte.convites" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 text-gray-400 hover:text-pink-400 transition-colors">
+              <a href="https://instagram.com/convitarte.convites" target="_blank"  className="flex items-center space-x-2 text-gray-400 hover:text-pink-400 transition-colors">
                 <Instagram className="w-5 h-5" />
                 <span>@convitarte.convites</span>
               </a>
-              <a href="https://tiktok.com/@convitarte" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-pink-400 transition-colors">
-                TikTok @convitarte
+              <a href="https://tiktok.com/@convitarte" target="_blank"  className="flex items-center space-x-2 text-gray-400 hover:text-pink-400 transition-colors">
+               <FontAwesomeIcon icon={faTiktok}  />
+                TikTok: @convitarte
               </a>
             </div>
           </div>

@@ -39,26 +39,26 @@ const ContactForm = () => {
 
   const validateForm = () => {
     const newErrors: FormErrors = {};
-    
+
     if (!formData.name || formData.name.length < 2) {
       newErrors.name = "Nome deve ter pelo menos 2 caracteres";
     }
-    
+
     if (!formData.phone || formData.phone.length < 10) {
       newErrors.phone = "Telefone deve ter pelo menos 10 dígitos";
     }
-    
+
     if (!formData.service) {
       newErrors.service = "Por favor, selecione um serviço";
     }
-    
+
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
   };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     if (!validateForm()) {
       toast({
         title: "Erro no formulário",
@@ -79,9 +79,9 @@ Aguardo retorno para agendarmos! 💄✨`;
 
     const phoneNumber = "5511999999999"; // Substitua pelo número real
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-    
+
     window.open(whatsappUrl, '_blank');
-    
+
     toast({
       title: "Redirecionando para WhatsApp...",
       description: "Você será direcionada para finalizar o agendamento!",
@@ -159,8 +159,8 @@ Aguardo retorno para agendarmos! 💄✨`;
                   {errors.service && <p className="text-red-500 text-sm mt-1">{errors.service}</p>}
                 </div>
 
-                <Button 
-                  type="submit" 
+                <Button
+                  type="submit"
                   className="w-full h-14 bg-gradient-to-r from-pink-500 to-rose-500 hover:from-pink-600 hover:to-rose-600 text-white rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 text-lg font-semibold"
                 >
                   <MessageCircle className="w-6 h-6 mr-3" />
@@ -217,7 +217,7 @@ Aguardo retorno para agendarmos! 💄✨`;
             <div className="bg-gradient-to-r from-amber-100 to-yellow-100 rounded-2xl p-6 border border-amber-200">
               <h4 className="font-bold text-amber-800 mb-2">✨ Primeira vez?</h4>
               <p className="text-amber-700 text-sm leading-relaxed">
-                Ganhe 10% de desconto no seu primeiro atendimento! 
+                Ganhe 10% de desconto no seu primeiro atendimento!
                 Mencione este cupom ao agendar pelo WhatsApp.
               </p>
             </div>

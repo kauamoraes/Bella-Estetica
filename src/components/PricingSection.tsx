@@ -42,7 +42,6 @@ const PricingSection = () => {
         "✅ Até 10 Fotos do Casal",
         "✅ Botões Clicáveis",
         "✅ Trilha Sonora",
-        "✅ Filtro Personalizado"
       ]
     },
     {
@@ -67,7 +66,7 @@ const PricingSection = () => {
               <CardContent className="p-6 text-center">
                 <div className="text-2xl font-bold text-pink-600 mb-2">{String(index + 1).padStart(2, '0')}</div>
                 <h3 className="text-xl font-bold text-gray-800 mb-4">{model.title}</h3>
-                <div className="text-2xl font-bold text-rose-600 mb-6">{model.price}</div>
+                <div className="text-2xl font-bold text-green-600 mb-6">{model.price}</div>
                 <div className="space-y-2 mb-8 text-left">
                   {model.features.map((feature, idx) => (
                     <p key={idx} className="text-gray-600">{feature}</p>

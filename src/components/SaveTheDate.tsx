@@ -23,7 +23,7 @@ const SaveTheDate = () => {
       price: "R$100", 
       description: "Vídeo + Line Art do local",
       buttonText: "QUERO SAVE THE DATE LINE ART",
-      image: "/uploads/5961ca26-c483-45d7-8b7d-dea009fd3884.png"
+      image: "/uploads/novoLineart.png"
     },
     {
       title: "Estendido",
@@ -61,11 +61,11 @@ const SaveTheDate = () => {
               <Card className="hover:shadow-xl transition-all duration-300 transform hover:scale-105 border-pink-100">
                 <CardContent className="p-6 text-center">
                   <h3 className="text-2xl font-bold text-gray-800 mb-2">{option.title}</h3>
-                  <div className="text-2xl font-bold text-rose-600 mb-4">{option.price}</div>
+                  <div className="text-2xl font-bold text-pink-600 mb-4">{option.price}</div>
                   <p className="text-gray-600 mb-4">{option.description}</p>
                   <div className="mb-6">
                     <a href="#" className="text-pink-600 text-sm hover:underline">
-                      🔗Click aqui e conheça o modelo
+                      🔗Clique aqui e conheça o modelo
                     </a>
                   </div>
                   <Button
