@@ -1,5 +1,4 @@
 
-import { MessageCircle, MapPin, Phone, Link, Music } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
 const Services = () => {

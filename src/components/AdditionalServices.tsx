@@ -42,15 +42,13 @@ const AdditionalServices = () => {
                 {service.note && (
                   <p className="text-sm text-pink-600 italic">{service.note}</p>
                 )}
-                <div className="mt-4">
-                  <p className="text-sm text-gray-500">Fotos Demonstrativas</p>
-                </div>
+                
               </CardContent>
             </Card>
           ))}
         </div>
 
-        <Card className="bg-transparent border-pink-200">
+        <Card className="bg-transparent border-pink-200 bg-white">
           <CardContent className="p-8 text-center">
             <h3 className="text-2xl font-bold text-gray-800 mb-4">
               Combo Convite dos Padrinhos + Manual dos Padrinhos - R$150,00

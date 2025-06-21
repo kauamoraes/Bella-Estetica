@@ -17,8 +17,8 @@ const Header = () => {
             Convitarte
           </span>
         </div>
-        
-        <Button 
+
+        <Button
           onClick={scrollToModels}
           className="bg-gradient-to-r from-pink-500 to-rose-500 hover:from-pink-600 hover:to-rose-600 text-white px-6 py-2 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
         >

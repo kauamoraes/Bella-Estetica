@@ -5,14 +5,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white py-16">
+    <footer className="bg-gray-900 text-white py-10">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <div className="flex items-center justify-center space-x-3 mb-6">
+          <div className="flex items-center justify-center object-contain mb-6 ">
             <img 
-              src="/lovable-uploads/f26e81b1-6f2e-41f7-90de-886a27f63f29.png" 
+              src="/uploads/LogoTransparent.png" 
               alt="Convitarte Logo" 
-              className="h-20 w-auto"
+              className="h-52 w-48"
             />
           </div>
           
