@@ -15,19 +15,22 @@ const SaveTheDate = () => {
       title: "Aquarela",
       price: "R$100",
       description: "Vídeo + Aquarela do local + 1 Foto do casal em Aquarela ou Normal",
-      buttonText: "QUERO SAVE THE DATE AQUARELA"
+      buttonText: "QUERO SAVE THE DATE AQUARELA",
+      image: "/lovable-uploads/c753bdd8-b0fd-4af4-926c-c15bacd14c32.png"
     },
     {
       title: "Line Art",
       price: "R$100", 
       description: "Vídeo + Line Art do local",
-      buttonText: "QUERO SAVE THE DATE LINE ART"
+      buttonText: "QUERO SAVE THE DATE LINE ART",
+      image: "/lovable-uploads/5961ca26-c483-45d7-8b7d-dea009fd3884.png"
     },
     {
       title: "Estendido",
       price: "R$150",
       description: "Site com linha do tempo do casal + Aquarela do local + até 4 fotos do casal",
-      buttonText: "QUERO SAVE THE DATE ESTENDIDO"
+      buttonText: "QUERO SAVE THE DATE ESTENDIDO",
+      image: "/lovable-uploads/d9f5b63c-1c72-4bd4-b2dc-0e0f73b9e5c7.png"
     }
   ];
 
@@ -45,24 +48,35 @@ const SaveTheDate = () => {
         
         <div className="grid md:grid-cols-3 gap-8">
           {saveTheDateOptions.map((option, index) => (
-            <Card key={index} className="hover:shadow-xl transition-all duration-300 transform hover:scale-105 border-pink-100">
-              <CardContent className="p-6 text-center">
-                <h3 className="text-2xl font-bold text-gray-800 mb-2">{option.title}</h3>
-                <div className="text-2xl font-bold text-rose-600 mb-4">{option.price}</div>
-                <p className="text-gray-600 mb-4">{option.description}</p>
-                <div className="mb-6">
-                  <a href="#" className="text-pink-600 text-sm hover:underline">
-                    🔗Click aqui para ver o modelo
-                  </a>
+            <div key={index} className="relative">
+              {option.image && (
+                <div className="mb-4">
+                  <img 
+                    src={option.image} 
+                    alt={option.title}
+                    className="block w-full h-[20rem] object-cover rounded-lg"
+                  />
                 </div>
-                <Button
-                  onClick={() => handleSaveTheDateClick(option.title)}
-                  className="w-full bg-gradient-to-r from-pink-500 to-rose-500 hover:from-pink-600 hover:to-rose-600 text-white rounded-full"
-                >
-                  {option.buttonText}
-                </Button>
-              </CardContent>
-            </Card>
+              )}
+              <Card className="hover:shadow-xl transition-all duration-300 transform hover:scale-105 border-pink-100">
+                <CardContent className="p-6 text-center">
+                  <h3 className="text-2xl font-bold text-gray-800 mb-2">{option.title}</h3>
+                  <div className="text-2xl font-bold text-rose-600 mb-4">{option.price}</div>
+                  <p className="text-gray-600 mb-4">{option.description}</p>
+                  <div className="mb-6">
+                    <a href="#" className="text-pink-600 text-sm hover:underline">
+                      🔗Click aqui e conheça o modelo
+                    </a>
+                  </div>
+                  <Button
+                    onClick={() => handleSaveTheDateClick(option.title)}
+                    className="w-full bg-gradient-to-r from-pink-500 to-rose-500 hover:from-pink-600 hover:to-rose-600 text-white rounded-full"
+                  >
+                    {option.buttonText}
+                  </Button>
+                </CardContent>
+              </Card>
+            </div>
           ))}
         </div>
       </div>
