@@ -58,9 +58,10 @@ const AdditionalServices = () => {
             <p className="text-gray-600 mb-4">
               Save The Date + Aquarela do local + Aquarela Croqui da Paleta de Cores + Informações para os Padrinhos
             </p>
-            <div className="mb-4">
-              <p className="text-sm text-gray-500 mb-2">🎬 [Inserir vídeo demonstrativo]</p>
-              <p className="text-sm text-pink-600">Link de 2 PDF's</p>
+            <div className="mb-4 flex flex-col gap-2">
+              <a href="/uploads/Convite Padrinhos - Catarina & Renato.pdf" target="_blank" className="text-sm text-pink-600 hover:underline">🔗Clique aqui para ver o convite dos padrinhos</a>
+
+              <a href="/uploads/Manual dos Padrinhos.pdf" target="_blank" className="text-sm text-pink-600 hover:underline">🔗Clique aqui para ver o manual dos padrinhos</a>
             </div>
           </CardContent>
         </Card>

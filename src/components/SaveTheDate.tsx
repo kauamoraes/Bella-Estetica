@@ -16,21 +16,24 @@ const SaveTheDate = () => {
       price: "R$100",
       description: "Vídeo + Aquarela do local + 1 Foto do casal em Aquarela ou Normal",
       buttonText: "QUERO SAVE THE DATE AQUARELA",
-      image: "/uploads/c753bdd8-b0fd-4af4-926c-c15bacd14c32.png"
+      image: "/uploads/c753bdd8-b0fd-4af4-926c-c15bacd14c32.png",
+      video: "/uploads/Save The Date Aquarela.mp4"
     },
     {
       title: "Line Art",
       price: "R$100", 
       description: "Vídeo + Line Art do local",
       buttonText: "QUERO SAVE THE DATE LINE ART",
-      image: "/uploads/novoLineart.png"
+      image: "/uploads/novoLineart.png",
+      video: "/uploads/Save The Date Line Art.mp4"
     },
     {
       title: "Estendido",
       price: "R$150",
       description: "Site com linha do tempo do casal + Aquarela do local + até 4 fotos do casal",
       buttonText: "QUERO SAVE THE DATE ESTENDIDO",
-      image: "/uploads/d9f5b63c-1c72-4bd4-b2dc-0e0f73b9e5c7.png"
+      image: "/uploads/d9f5b63c-1c72-4bd4-b2dc-0e0f73b9e5c7.png",
+      video: "https://convitarte.com.br/carolinaebernardo"
     }
   ];
 
@@ -64,7 +67,7 @@ const SaveTheDate = () => {
                   <div className="text-2xl font-bold text-pink-600 mb-4">{option.price}</div>
                   <p className="text-gray-600 mb-4">{option.description}</p>
                   <div className="mb-6">
-                    <a href="#" className="text-pink-600 text-sm hover:underline">
+                    <a href={option.video} target="_blank" className="text-pink-600 text-sm hover:underline">
                       🔗Clique aqui e conheça o modelo
                     </a>
                   </div>

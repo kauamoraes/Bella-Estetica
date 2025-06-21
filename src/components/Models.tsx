@@ -58,15 +58,15 @@ const Models = () => {
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 ">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10 ">
           {models.map((model, index) => (
             <div key={index} className="relative">
               {model.image && (
-                <div className="mb-4">
+                <div className="mb-4 mt-12">
                   <img 
                     src={model.image} 
                     alt={model.title}
-                    className="block w-full h-[20rem] object-contain rounded-lg"
+                    className="block w-full h-[25rem] object-contain rounded-lg"
                   />
                 </div>
               )}
