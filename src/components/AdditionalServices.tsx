@@ -50,7 +50,7 @@ const AdditionalServices = () => {
           ))}
         </div>
 
-        <Card className="bg-gradient-to-r from-pink-100 to-rose-100 border-pink-200">
+        <Card className="bg-transparent border-pink-200">
           <CardContent className="p-8 text-center">
             <h3 className="text-2xl font-bold text-gray-800 mb-4">
               Combo Convite dos Padrinhos + Manual dos Padrinhos - R$150,00
