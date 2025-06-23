@@ -43,11 +43,9 @@ const Testimonials = () => {
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">
             O que dizem nossas <span className="bg-gradient-to-r from-pink-600 to-rose-600 bg-clip-text text-transparent">Clientes</span>
           </h2>
-          <h3 className="text-4xl lg:text-2xl font-bold mb-6">
-            Mais de 500 <span className="bg-gradient-to-r from-pink-600 to-rose-600 bg-clip-text text-transparent">noivinhos</span> emocionados com os nossos convites
-          </h3>
+          
           <p className="text-xl text-gray-600">
-            Mais de 500 mulheres já transformaram sua beleza conosco
+            Mais de 500 noivinhos emocionados com os nossos convites
           </p>
         </div>
 
