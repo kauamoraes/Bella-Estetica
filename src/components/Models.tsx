@@ -62,7 +62,7 @@ const Models = () => {
           {models.map((model, index) => (
             <div key={index} className="relative">
               {model.image && (
-                <div className="mb-4 mt-12">
+                <div className="mb-4 mt-2">
                   <img 
                     src={model.image} 
                     alt={model.title}

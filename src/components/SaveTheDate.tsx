@@ -21,7 +21,7 @@ const SaveTheDate = () => {
     },
     {
       title: "Line Art",
-      price: "R$100", 
+      price: "R$100",
       description: "Vídeo + Line Art do local",
       buttonText: "QUERO SAVE THE DATE LINE ART",
       image: "/uploads/novoLineart.png",
@@ -48,16 +48,17 @@ const SaveTheDate = () => {
             Antecipe a emoção com um Save The Date que combina com o estilo do seu casamento.
           </p>
         </div>
-        
+
         <div className="grid md:grid-cols-3 gap-8">
           {saveTheDateOptions.map((option, index) => (
             <div key={index} className="relative">
               {option.image && (
-                <div className="mb-4">
-                  <img 
-                    src={option.image} 
+                <div className="mb-4 overflow-hidden">
+                  <img
+                    src={option.image}
                     alt={option.title}
-                    className="block w-full h-[20rem] object-contain rounded-lg "
+                    className={`block w-[25rem] h-[25rem] rounded-lg transition-transform duration-300 object-contain ${option.title === "Line Art" ? "scale-150" : ""
+                      }`}
                   />
                 </div>
               )}
