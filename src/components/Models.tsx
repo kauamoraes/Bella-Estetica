@@ -49,7 +49,7 @@ const Models = () => {
   return (
     <section id="models" className="py-20 px-4 bg-gradient-to-br from-pink-50 via-white to-rose-50">
       <div className="container mx-auto">
-        <div className="text-center mb-16">
+        <div className="text-center mb-">
           <h2 className="text-4xl font-bold text-gray-800 mb-6">
             Conheça Nossos Modelos de Convite Interativo
           </h2>
@@ -58,11 +58,11 @@ const Models = () => {
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10 ">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-2 ">
           {models.map((model, index) => (
             <div key={index} className="relative">
               {model.image && (
-                <div className="mb-4 mt-2">
+                <div className="mb-2">
                   <img 
                     src={model.image} 
                     alt={model.title}

@@ -49,11 +49,11 @@ const SaveTheDate = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-3 gap-10">
           {saveTheDateOptions.map((option, index) => (
             <div key={index} className="relative">
               {option.image && (
-                <div className="mb-4 overflow-hidden">
+                <div className="mb-2 overflow-hidden">
                   <img
                     src={option.image}
                     alt={option.title}

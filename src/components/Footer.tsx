@@ -31,7 +31,7 @@ const Footer = () => {
               </a>
               <a href="https://tiktok.com/@convitarte" target="_blank"  className="flex items-center space-x-2 text-gray-400 hover:text-pink-400 transition-colors">
                <FontAwesomeIcon icon={faTiktok} className="w-5 h-5" />
-                <span>TikTok: @convitarte</span>
+                <span>@convitarte</span>
               </a>
             </div>
           </div>

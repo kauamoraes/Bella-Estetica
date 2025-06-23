@@ -13,7 +13,7 @@ const Header = () => {
           <img 
           src="/uploads/Fotos.png" 
           alt="fotos" 
-          className=" w-60 rounded-full object-contain"
+          className=" w-52 rounded-full object-contain"
           />
         </div>
 
