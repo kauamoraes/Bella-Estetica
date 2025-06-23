@@ -10,12 +10,11 @@ const Header = () => {
     <header className="bg-white/95 backdrop-blur-sm shadow-sm sticky top-0 z-50">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <div className="flex items-center space-x-3">
-          <div className="w-12 h-12 bg-gradient-to-r from-pink-400 to-rose-400 rounded-full flex items-center justify-center">
-            <span className="text-white font-bold text-xl">C</span>
-          </div>
-          <span className="text-2xl font-bold bg-gradient-to-r from-pink-600 to-rose-600 bg-clip-text text-transparent">
-            Convitarte
-          </span>
+          <img 
+          src="/uploads/Fotos.png" 
+          alt="fotos" 
+          className=" w-60 rounded-full object-contain"
+          />
         </div>
 
         <Button
