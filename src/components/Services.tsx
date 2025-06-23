@@ -39,14 +39,14 @@ const Services = () => {
     <section className="py-20 px-4 bg-white">
       <div className="container mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-800 mb-6">
+          <h2 className="text-4xl font-bold text-gray-800 mb-8">
             Todos os modelos incluem:
           </h2>
-          <div className="mb-8">
+          <div className="mb-2">
             <img 
-              src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=500&h=300&fit=crop&crop=center"
+              src="/uploads/Seção 2.png"
               alt="Exemplo de convite"
-              className="mx-auto rounded-2xl shadow-lg max-w-sm w-full"
+              className="block m-0 p-0 mx-auto max-w-sm w-full rounded-none shadow-none"
             />
           </div>
         </div>

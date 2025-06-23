@@ -12,9 +12,9 @@ const HowGuestsReceive = () => {
         
         <div className="max-w-2xl mx-auto">
           <img 
-            src="https://images.unsplash.com/photo-1721322800607-8c38375eef04?w=600&h=400&fit=crop&crop=center"
+            src="/uploads/Seção 7.png"
             alt="Como os convidados recebem"
-            className="w-full rounded-2xl shadow-2xl"
+            className="w-full rounded-2xl"
           />
         </div>
       </div>

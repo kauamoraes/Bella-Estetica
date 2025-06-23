@@ -26,15 +26,15 @@ const Hero = () => {
           Interativo, personalizado e com a essência do seu grande dia.
         </p>
 
-        <p className="text-lg text-gray-500 mb-10 max-w-2xl mx-auto">
+        <p className="text-lg text-gray-500 max-w-2xl mx-auto mb-8">
           Convites digitais com design personalizado que encantam à primeira vista!
         </p>
 
-        <div className="mb-16">
+        <div className="mb-10">
           <img
-            src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=600&h=400&fit=crop&crop=center"
+            src="/uploads/Seção 1.png"
             alt="Convite digital elegante"
-            className="mx-auto rounded-2xl shadow-2xl max-w-md w-full"
+            className="mx-auto rounded-2xl max-w-md w-80"
           />
         </div>
 

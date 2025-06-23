@@ -7,19 +7,22 @@ const AdditionalServices = () => {
       title: "Monograma Personalizado",
       price: "R$25",
       description: "Transformamos as iniciais do casal em uma arte exclusiva, feita especialmente para o seu convite.",
-      note: "📌 Antes de aplicar no convite, enviamos várias opções de monograma para que você escolha a que mais combina com vocês!"
+      note: "📌 Antes de aplicar no convite, enviamos várias opções de monograma para que você escolha a que mais combina com vocês!",
+      image: "/uploads/Aquarela (1).png"
     },
     {
       title: "Filtro para Instagram", 
       price: "R$35",
       description: "Tenha um filtro personalizado para seus convidados usarem e compartilharem no grande dia!",
-      note: "📌 Antes de aplicar no convite, enviamos várias opções de filtros para que você escolha a que mais combina com vocês!"
+      note: "📌 Antes de aplicar no convite, enviamos várias opções de filtros para que você escolha a que mais combina com vocês!",
+      image: "/uploads/filtros Seção 5.png"
     },
     {
       title: "Aquarela da Igreja ou do Local",
       price: "R$30",
       description: "Arte personalizada do local da sua cerimônia ou recepção.",
-      note: ""
+      note: "",
+      image: "/uploads/Monogramas.png"
     }
   ];
 
@@ -41,6 +44,15 @@ const AdditionalServices = () => {
                 <p className="text-gray-600 mb-4">{service.description}</p>
                 {service.note && (
                   <p className="text-sm text-pink-600 italic">{service.note}</p>
+                )}
+                {service.image && (
+                  <div className="mt-4">
+                    <img
+                      src={service.image}
+                      alt={service.title}
+                      className="w-full rounded-lg"
+                    />
+                  </div>
                 )}
                 
               </CardContent>
