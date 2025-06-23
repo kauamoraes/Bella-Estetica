@@ -10,13 +10,13 @@ const Footer = () => {
         <div className="text-center mb-12">
           <div className="flex items-center justify-center object-contain mb-6 ">
             <img 
-              src="/uploads/LogoTransparent.png" 
+              src="/uploads/img-Rodapé.png" 
               alt="Convitarte Logo" 
-              className="h-52 w-48"
+              className="h-50 w-64"
             />
           </div>
 
-          <h3 className="text-2xl font-bold mb-8  text-pink-600">
+          <h3 className="text-2xl font-bold mb-8  text-white">
             Tenha um convite de casamento moderno e inesquecível
           </h3>
         </div>
