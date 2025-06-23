@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 const ContactSection = () => {
   const handleWhatsAppClick = () => {
-    const phoneNumber = "5511999999999";
+    const phoneNumber = "553798144960";
     const message = "Olá! Preciso de ajuda para escolher o modelo ideal de convite! 💌";
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');

@@ -15,15 +15,15 @@ const Footer = () => {
               className="h-52 w-48"
             />
           </div>
-          
-          <h3 className="text-2xl font-bold mb-8 text-pink-400">
+
+          <h3 className="text-2xl font-bold mb-8  text-pink-600">
             Tenha um convite de casamento moderno e inesquecível
           </h3>
         </div>
 
         <div className="text-center space-y-6 mb-12">
           <div>
-            <h4 className="text-lg font-semibold mb-4 text-pink-400">Redes Sociais</h4>
+            <h4 className="text-lg font-semibold mb-4  text-pink-600">Redes Sociais</h4>
             <div className="flex justify-center space-x-6">
               <a href="https://instagram.com/convitarte.convites" target="_blank"  className="flex items-center space-x-2 text-gray-400 hover:text-pink-400 transition-colors">
                 <Instagram className="w-5 h-5" />
@@ -37,8 +37,8 @@ const Footer = () => {
           </div>
 
           <div>
-            <h4 className="text-lg font-semibold mb-4 text-pink-400">Contato</h4>
-            <a href="mailto:convitartedigital@gmail.com" className="text-gray-400 hover:text-pink-400 transition-colors">
+            <h4 className="text-lg font-semibold mb-4 text-pink-600">Contato</h4>
+            <a href="mailto:convitartedigital@gmail.com" className="text-gray-400 hover:text-pink-600 transition-colors">
               convitartedigital@gmail.com
             </a>
           </div>

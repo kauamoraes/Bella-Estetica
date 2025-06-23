@@ -4,7 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const PricingSection = () => {
   const handleWhatsAppClick = (model: string, price: string) => {
-    const phoneNumber = "5511999999999";
+    const phoneNumber = "553798144960";
     const message = `Olá! Gostaria de encomendar o ${model} por ${price}! 💌`;
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');

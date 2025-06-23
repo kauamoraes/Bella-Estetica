@@ -43,18 +43,21 @@ const Testimonials = () => {
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">
             O que dizem nossas <span className="bg-gradient-to-r from-pink-600 to-rose-600 bg-clip-text text-transparent">Clientes</span>
           </h2>
+          <h3 className="text-4xl lg:text-2xl font-bold mb-6">
+            Mais de 500 <span className="bg-gradient-to-r from-pink-600 to-rose-600 bg-clip-text text-transparent">noivinhos</span> emocionados com os nossos convites
+          </h3>
           <p className="text-xl text-gray-600">
             Mais de 500 mulheres já transformaram sua beleza conosco
           </p>
         </div>
-        
+
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
             <Card key={index} className="bg-white hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border-0 shadow-lg">
               <CardContent className="p-8">
                 <div className="flex items-center mb-6">
-                  <img 
-                    src={testimonial.image} 
+                  <img
+                    src={testimonial.image}
                     alt={testimonial.name}
                     className="w-16 h-16 rounded-full object-cover mr-4"
                   />
@@ -62,13 +65,13 @@ const Testimonials = () => {
                     <h4 className="font-bold text-gray-800 text-lg">{testimonial.name}</h4>
                   </div>
                 </div>
-                
+
                 <div className="flex mb-4">
                   {[...Array(testimonial.rating)].map((_, i) => (
                     <Star key={i} className="w-5 h-5 text-amber-400 fill-current" />
                   ))}
                 </div>
-                
+
                 <div className="relative">
                   <p className="text-gray-600 leading-relaxed italic pl-6">
                     "{testimonial.text}"

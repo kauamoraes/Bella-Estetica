@@ -68,7 +68,7 @@ const ContactForm = () => {
       return;
     }
 
-    // Monta a mensagem do WhatsApp
+    
     const message = `Olá! Gostaria de agendar um atendimento.
 
 *Nome:* ${formData.name}
@@ -77,7 +77,7 @@ const ContactForm = () => {
 
 Aguardo retorno para agendarmos! 💄✨`;
 
-    const phoneNumber = "5511999999999"; // Substitua pelo número real
+    const phoneNumber = "553798144960"; 
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
     window.open(whatsappUrl, '_blank');
@@ -179,7 +179,7 @@ Aguardo retorno para agendarmos! 💄✨`;
                     <Phone className="w-6 h-6" />
                     <div>
                       <p className="font-semibold">WhatsApp</p>
-                      <p className="opacity-90">(11) 99999-9999</p>
+                      <p className="opacity-90">(37)98144960</p>
                     </div>
                   </div>
                   <div className="flex items-center space-x-4">

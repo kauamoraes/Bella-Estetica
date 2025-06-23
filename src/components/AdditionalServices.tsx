@@ -8,7 +8,7 @@ const AdditionalServices = () => {
       price: "R$25",
       description: "Transformamos as iniciais do casal em uma arte exclusiva, feita especialmente para o seu convite.",
       note: "📌 Antes de aplicar no convite, enviamos várias opções de monograma para que você escolha a que mais combina com vocês!",
-      image: "/uploads/Aquarela (1).png"
+      image: "/uploads/Monogramas.png"
     },
     {
       title: "Filtro para Instagram", 
@@ -22,7 +22,7 @@ const AdditionalServices = () => {
       price: "R$30",
       description: "Arte personalizada do local da sua cerimônia ou recepção.",
       note: "",
-      image: "/uploads/Monogramas.png"
+      image: "/uploads/Aquarela (1).png"
     }
   ];
 
@@ -60,10 +60,18 @@ const AdditionalServices = () => {
           ))}
         </div>
 
+        <div className="mb-8">
+          <img 
+          src="/uploads/Manual-e-Padrinhos.png" 
+          alt="Manual dos Padrinhos" 
+          className="mx-auto rounded-2xl max-w-md w-80"
+          />
+        </div>
+
         <Card className="bg-transparent border-pink-200 bg-white">
           <CardContent className="p-8 text-center">
             <h3 className="text-2xl font-bold text-gray-800 mb-4">
-              Combo Convite dos Padrinhos + Manual dos Padrinhos - R$150,00
+              Combo Convite dos Padrinhos + Manual dos Padrinhos <span className="text-pink-600">R$150,00</span>
             </h3>
             <p className="text-gray-600 mb-4">
               Save The Date + Aquarela do local + Aquarela Croqui da Paleta de Cores + Informações para os Padrinhos
@@ -78,8 +86,7 @@ const AdditionalServices = () => {
 
         <div className="text-center mt-8">
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Esses itens são opcionais e podem ser adicionados ao seu carrinho no momento da finalização da encomenda.
-            Escolha seu convite primeiro e, na próxima etapa, selecione os adicionais que desejar.
+            Esses itens são opcionais e podem ser adicionados no momento da finalização da encomenda. Escolha seu convite primeiro e, no WhatsApp, nos informe os adicionais que desejar.
           </p>
         </div>
       </div>
