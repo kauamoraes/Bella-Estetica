@@ -57,7 +57,9 @@ const SaveTheDate = () => {
                   <img 
                     src={option.image} 
                     alt={option.title}
-                    className="block w-full h-[20rem] object-contain rounded-lg "
+                    className={`block w-full object-contain rounded-lg ${
+                      option.title === "Line Art" ? "h-[30rem]" : "h-[20rem]"
+                    }`}
                   />
                 </div>
               )}
