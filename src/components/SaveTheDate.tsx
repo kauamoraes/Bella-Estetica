@@ -57,9 +57,7 @@ const SaveTheDate = () => {
                   <img
                     src={option.image}
                     alt={option.title}
-                    className={`block rounded-lg object-contain transition-transform duration-300 ${option.title === "Line Art"
-                        ? "w-[25rem] h-[30rem] scale-110"
-                        : "w-[25rem] h-[25rem]"
+                    className={`block w-[25rem] h-[25rem] rounded-lg transition-transform duration-300 object-contain ${option.title === "Line Art" ? "scale-150" : ""
                       }`}
                   />
                 </div>
